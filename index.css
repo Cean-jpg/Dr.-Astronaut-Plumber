@@ -1,5 +1,44 @@
+
+@font-face {
+    font-family: 'Akira';
+    src: url(assets/fonts/Akira\ Expanded\ Demo.otf)
+}
 body {
     background-color: #303030;
     font-family: 'Bitcount';
     color: #ECECEC;
+}
+
+.tob-bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+.logo{
+    width: 50px;
+    height: 50;
+    background-color:white;
+    border-radius: 50%;
+}
+.navbar {
+    font-family: 'Akira';
+    background-color:#d4712e;
+    color: black;
+    border-radius: 2%;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }
