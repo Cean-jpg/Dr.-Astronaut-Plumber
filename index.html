@@ -1,25 +1,199 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dr. Johnny Astronaut Plumber</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    
-    <body>
-        <div class="top-bar">
-            <div class="logo"></div>
-            <header class="navbar">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">About Me</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contacts</a>
-                </nav>
-            </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Johnny Astronaut Plumber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <span class="divider"></span>
+        <a href="#skills-section">Skills</a>
+        <span class="divider"></span>
+        <a href="#projects">Projects</a>
+        <span class="divider"></span>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about" class="about">
+        <div class="about-page">
+            <div class="about-text">
+                <h1>Dr. Johnny Astronaut Plumber</h1>
+                <p>Pogi na mabait pa.</p>
+            </div>
+            <div class="about-image">
+                <div class="image-card">
+                    <img src="assets/images/intro-photo.JPG" alt="Intro Photo">
+                </div>
+                <button class="contact-button" onclick="location.href='#contact'">Contact Me</button>
+            </div>
         </div>
-        <h1>Dr. Johnny Astronaut Plumber</h1>
-    </body>
+        <div class="know-more">
+            <h2>KNOW MORE</h2>
+            <span>↓</span>
+        </div>
+    </section>
+
+    <section id="skills-section" class="skills-section">
+        <div class="skills-card">
+            <input type="radio" name="tab" id="tab-skills" checked>
+            <input type="radio" name="tab" id="tab-strengths">
+            <input type="radio" name="tab" id="tab-weaknesses">
+            
+            <h2 class="title skills-title">SKILLS</h2>
+            <h2 class="title strengths-title">STRENGTHS</h2>
+            <h2 class="title weaknesses-title">WEAKNESSES</h2>
+            
+            <div class="content skills-content">
+                <ul>
+                    <li>Bumubuhat ng lima</li>
+                </ul>
+            </div>
+            <div class="content strengths-content">
+                <ul>
+                    <li>Nagmamahal ng isa</li>
+                </ul>
+            </div>
+            <div class="content weaknesses-content">
+                <ul>
+                    <li>Iniwan at dinurog nung isa</li>
+                </ul>
+            </div>
+            
+            <div class="dots">
+                <label for="tab-skills" class="dot blue"></label>
+                <label for="tab-strengths" class="dot orange"></label>
+                <label for="tab-weaknesses" class="dot orange"></label>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="projects-title">PROJECTS</h2>
+        <div class="carousel-wrapper">
+            <button class="arrow left" aria-label="Previous">◀</button>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="project-card">
+                        <h3>Gaming Setup</h3>
+                        <img src="assets/images/project1.JPG" alt="My Gaming Setup">
+                        <p>My Safe Space</p>
+                        <div class="extra"><p>Gaming Setup Go... Brrrrrrrrrr....</p></div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Shoes</h3>
+                        <img src="assets/images/project2.JPG" alt="Shoes">
+                        <p>1.2. Buckle my Shoes</p>
+                        <div class="extra"><p>Syempre, Sapatos na yan e, bat pa ako tatanggi?</p></div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Currently a Shit Box</h3>
+                        <img src="assets/images/project3.png" alt="Project 3">
+                        <p>takbong pogi lang kasi di kaya bumalagbag</p>
+                        <div class="extra"><p>Di matono-tono e walangya</p></div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Evo</h3>
+                        <img src="assets/images/project4.png" alt="Project 4">
+                        <p>Evooooooooooooooo</p>
+                        <div class="extra"><p>Kunti na lang talaga, civic evo bumabaklas ng lambo</p></div>
+                    </div>
+                    <div class="project-card">
+                        <h3>LOG</h3>
+                        <img src="assets/images/project5.png" alt="Project 5">
+                        <p>I think faster internet is needed</p>
+                        <div class="extra"><p>Internet Speed Less than 500mbps is unacceptable</p></div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" aria-label="Next">▶</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="contact-item">
+                    <img src="assets/images/vecteezy_round-circle-black-and-white-facebook-logo-on-a-transparent_42127151.png" alt="Facebook">
+                    <span>@drastronautplumber</span>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/images/vecteezy_black-and-white-instagram-logo-on-circle-with-transparent_42598427.png" alt="Instagram">
+                    <span>@drastronautplumber</span>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/images/vecteezy_mail-icon-isolated-on-transparent-background-mail_22168458.png" alt="Email">
+                    <span>drastronautplumber@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="assets/images/vecteezy_discord-logo-png-discord-icon-transparent-png_18930602.png" alt="Discord">
+                    <span>@drastronautplumber</span>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h2 class="reviews-title">REVIEWS</h2>
+                <div class="review-box">
+                    <div class="review-track">
+                        <div class="review">
+                            <h3>Customer 1</h3>
+                            <p>Lorem ipsum dolor sit amet...</p>
+                        </div>
+                        <div class="review">
+                            <h3>Customer 2</h3>
+                            <p>Palo, Palobog sa sobrang galing</p>
+                        </div>
+                        <div class="review">
+                            <h3>Customer 3</h3>
+                            <p>Lupit at ang Bangis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    © DRASTRONAUTPLUMBER 2026
+</footer>
+
+<script>
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+    if (window.location.hash) {
+        history.replaceState(null, null, ' ');
+    }
+});
+
+const track = document.querySelector('.carousel-track');
+const leftBtn = document.querySelector('.arrow.left');
+const rightBtn = document.querySelector('.arrow.right');
+
+if (track && leftBtn && rightBtn) {
+    rightBtn.addEventListener('click', () => {
+        track.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+    leftBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+}
+</script>
+
+</body>
 </html>
