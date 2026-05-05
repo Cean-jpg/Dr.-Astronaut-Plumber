@@ -81,7 +81,7 @@ section {
 
 .about-text {
     text-align: right;
-    max-width: 1000px;
+    min-width: 1000px;
     margin-left: 250px;
 }
 
